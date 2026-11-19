@@ -1,0 +1,49 @@
+# Wszystkie godziny są w strefie Europe/Warsaw.
+timezone: "Europe/Warsaw"
+schedule:
+  enabled: true
+  times: ["15:00", "18:00", "21:00"]
+  warning-seconds: 600
+
+raid:
+  duration-seconds: 1800
+  # Losowanie lokalizacji względem środka borderu świata.
+  world: "world"
+  min-radius: 1000
+  max-radius: 5000
+  teleport-radius: 500
+  teleport-cost: 500.0
+  # Plik raid.schem umieść w folderze plugins/RaidPlugin/raid.schem.
+  schematic-file: "raid.schem"
+  # Pozycja dropu względem punktu wklejenia schematu.
+  drop-offset: { x: 0, y: 2, z: 0 }
+  drop-interval-seconds: 300
+  items-per-drop: 2
+  protect-entire-schematic: true
+  waypoint:
+    enabled: true
+    # Tekst nad strukturą + odległość na pasku akcji.
+    floating-label: true
+    compass-target: true
+
+loot:
+  # Wpisy są losowane bez powtórzeń w ramach jednego zrzutu.
+  - material: NETHERITE_INGOT
+    amount: 1
+    weight: 5
+    display-name: "&cNetherite"
+  - material: WIND_CHARGE
+    amount: 16
+    weight: 25
+  - material: TOTEM_OF_UNDYING
+    amount: 1
+    weight: 10
+  - material: ENCHANTED_GOLDEN_APPLE
+    amount: 2
+    weight: 10
+  - material: DIAMOND_BLOCK
+    amount: 4
+    weight: 20
+  - material: MACE
+    amount: 1
+    weight: 2

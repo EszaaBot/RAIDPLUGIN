@@ -1,0 +1,30 @@
+name: RaidPlugin
+version: 1.2.0
+main: pl.anarchia.raid.RaidPlugin
+api-version: '1.21'
+softdepend: [WorldEdit, Vault, Essentials]
+commands:
+  rajd:
+    description: Menu i administracja raidami
+    usage: /rajd [tp|start|stop|godziny|drop|reload]
+  rajdstart:
+    description: Natychmiastowe uruchomienie raidu
+    permission: raid.admin
+  rajdstop:
+    description: Zatrzymanie raidu
+    permission: raid.admin
+  rajddrop:
+    description: Otwiera graficzny edytor dropu raidu
+    permission: raid.admin
+  rajdgodziny:
+    description: Otwiera graficzny edytor godzin raidów
+    permission: raid.admin
+  rajdreload:
+    description: Przeładowanie konfiguracji raidu
+    permission: raid.admin
+  rajdtp:
+    description: Płatna teleportacja do raidu
+permissions:
+  raid.admin:
+    description: Administracja raidami
+    default: op
